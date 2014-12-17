@@ -1,0 +1,21 @@
+int[] numbers = { 13, 26, 39, 53, 65 };
+            r:
+            Console.Write("Guess number :");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if(numbers[i]==number)
+                {
+                    Console.WriteLine("Conguraculations!Nice Guess :)");
+                }
+                else
+                {
+                    Console.WriteLine("Wrong Guess,another please!");
+                    goto r;
+                }
+            }
+            
+
+
+            Console.ReadKey();
